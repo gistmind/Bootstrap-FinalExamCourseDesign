@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 70px;
+    background: rgba(0,0,0,0);
+    border: none;
+}
+.navbar li a{
+    font-size: 16px;
+    line-height: 50px;
+}
+.container{
+    width: 1226px;
+}
+/*导航栏*/
+.nav-change-left{
+    position: absolute;
+    z-index: 999;
+    line-height: 27px;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+    border: 0;
+    color: #fff;
+    background: #333!important;
+    background: rgba(0,0,0,0.6);
+}
+.nav-pills>li.active>a {
+    color:  #ffffff;
+     background-color: transparent!important;
+    padding-left: 30px!important;
+}
+.nav-stacked>li>a:hover {
+    color: #ffffff!important;
+    background-color: #ff6700!important;
+    border: none!important;
+}
+/*侧边栏样式*/
+.nav-change-right{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 999;
+    line-height: 27px;
+    width: 94px;
+    height: 480px;
+    font-size: 14px;
+    border: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+}
+.nav-change-right>li.active>a {
+    color:  #ffffff;
+    background-color: transparent!important;
+    padding-left: 0px!important;
+}
+.nav-change-right>li>a:hover {
+    color: #ffffff!important;
+    background-color: #ff6700!important;
+    border: none!important;
+}
+.nav-change-right-text{
+    font-size:30px ;
+    margin-left:40% ;
+}
+/*轮播样式*/
+.carousel-inner{
+    margin-top: 10px!important;
+}
+.carousel-indicators{
+    position: absolute!important;
+    bottom: 15px;
+    left: 99%;
+    width: 80px;
+}
+/*轮播控制样式*/
+.carousel-control{
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    top: 45%;
+    left: 234px;
+}
+/*广告样式*/
+.ad{
+    margin-left: 19px;
+}
+/*售卖区*/
+.sell{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+}
+.sell-phone-txt{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.sell-phone-txt>a{
+    color: #333;
+}
+.sell-phone-txt-link:hover{
+    color:#ff6700 ;
+    transition: .3s;
+}
+.phone{
+    width: 234px;
+    height: 260px;
+    margin: 0!important;
+    padding: 0!important;
+    background: #ffffff;
+    float: left!important;
+
+}
+.col-lg-9 img{
+width: 160px;
+    height: 160px;
+    margin: auto ;
+}
+.col-lg-9 {
+    width: 1020px;
+}
+.phone:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0,-2px, 0);
+    transition: .3s all;
+}
+.demo{
+    height:614px;
+    width:234px;
+}
+/*起隔开作用*/
+.gekai{
+    margin-left: 13px!important;
+}
+.phone_text{
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    color: #b0b0b0;
+}
+.price{
+    text-align: center;
+    color: #ff6700;
+}
+/*家电区*/
+.homr-left{
+    width: 234px;
+    height: auto;
+    background: #f5f5f5;
+    float: left;
+}
+.homr-left> img{
+    width: 234px;
+    height: 300px;
+}
+.homr-left img:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0,-2px, 0);
+    transition: .3s all;
+}
+.homr-right{
+    width: 992px;
+    float: left;
+}
+.home-txt-info{
+    width: 94px;
+    height: 42px;
+    margin-top: 10px;
+    margin-left: 30px;
+    position: absolute;
+    top: 40px;
+}
+.home-txt-more{
+    width: 94px;
+    height: 42px;
+    margin-top: 102px;
+    margin-left: 30px;
+    position: absolute;
+    top: 93px;
+}
+.home-txt-more>p{
+    margin: 0;
+}.home-txt-more>span{
+     font-size: 48px!important;
+     line-height: 48px!important;
+}
+.home-gl{
+    position: absolute;
+    right: 70px;
+    top: 190px;
+}
+.home-img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+}
+.nav-tabs-change{
+    color: black!important;
+    font-size:16px ;
+}
+.nav-tabs-change:hover{
+    color:  #ff6700!important;
+    border-bottom: 2px solid #ff6700!important;
+}
+/*页脚区，售后区*/
+.shouhou{
+    height: 80px;
+    margin-left: 23px;
+}
+.shouhou a{
+    line-height: 80px;
+    font-size: 16px;
+    color: #616161;
+    text-align: center;
+    transition: color .2s;
+}
+.shouhou a:hover{
+    line-height: 80px;
+    color: #ff6700;
+    transition: color .2s;
+}
+/*帮助区*/
+.help-title{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.help{
+    font-size: 12px;
+    color: #757575;
+}
+.person-btn{
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 25px;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: .5s;
+}
+.person-btn:hover {
+    background-color: #FD4D22;
+    border-color:#FD4D22;
+    color: white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0,-4px, 0);
+    transition: .3s all;
+}
+.copyright{
+    width: 100%;
+    height: auto;
+    background:#f5f5f5 ;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.slogan{
+        padding-top: 30px;
+
+}
+/*返回到顶部动画*/
+.moveback{
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 999;
+}
+.moveback .glyphicon{
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>时尚简洁的js轮播图特效插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" /><!--CSS RESET-->
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.ui-big-image img{
+			/*width: 0%;*/
+			/*height: 0;*/
+		}
+	</style>
+</head>
+<body>
+	<div id="app" data-state="0">
+		  <div class="ui-big-images">
+			  <div class="ui-big-image" data-key="0">
+				  <img src="img/stack-1.png" alt=""/>
+			  </div>
+		    <div class="ui-big-image" data-key="1">
+		      <img src="img/stack-2.png" alt=""/>
+		    </div>
+		    <div class="ui-big-image" data-key="2">
+				<img src="img/stack-3.png" alt=""/>
+			</div>
+		    <div class="ui-big-image" data-key="3">
+				<img src="img/stack-4.png" alt=""/>
+			</div>
+		    <div class="ui-big-image" data-key="4">
+				<img src="img/stack-5.png" alt=""/>
+			</div>
+		    <div class="ui-big-image" data-key="5">
+				<img src="img/stack-6.png" alt=""/>
+		    </div>
+		    <div class="ui-big-image" data-key="6">
+				<img src="img/stack-7.png" alt=""/>
+			</div>
+			  <div class="ui-big-image" data-key="7">
+				<img src="img/stack-8.png" alt=""/>
+			</div>
+		  </div>
+		<div class="ui-thumbnails">
+			<div class="ui-thumbnail" tabindex="-1" data-key="0">
+				<!--		      <img src="img/stack-2.png" alt="" />-->
+				<div class="ui-cuticle" data-flip-key="cuticle">
+
+				</div>
+			</div>
+		  <div class="ui-thumbnails">
+		    <div class="ui-thumbnail" tabindex="-1" data-key="1">
+<!--		      <img src="img/stack-2.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		    <div class="ui-thumbnail" tabindex="-1" data-key="2">
+<!--				<img src="img/stack-3.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		    <div class="ui-thumbnail" tabindex="-1" data-key="3">
+<!--				<img src="img/stack-4.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		    <div class="ui-thumbnail" tabindex="-1" data-key="4">
+<!--				<img src="img/stack-5.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		    <div class="ui-thumbnail" tabindex="-1" data-key="5">
+<!--				<img src="img/stack-6.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		    <div class="ui-thumbnail" tabindex="-1" data-key="6">
+<!--				<img src="img/stack-7.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div><div class="ui-thumbnail" tabindex="-1" data-key="7">
+<!--				<img src="img/stack-7.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div><div class="ui-thumbnail" tabindex="-1" data-key="8">
+<!--				<img src="img/stack-7.png" alt="" />-->
+		      <div class="ui-cuticle" data-flip-key="cuticle">
+
+			  </div>
+		    </div>
+		  </div>
+		  <div class="ui-content">
+		    
+		    <nav class="ui-nav">
+		      <button id="prev" tabindex="-1" title="Previous">&lt;</button>
+		      <button id="next" tabindex="-1" title="Next">&gt;</button>
+		    </nav>
+		    
+		    <div class="ui-articles">
+		      <article class="ui-article" data-key="0">
+		        <h2 class="ui-heading">小米集团2018年财报</h2>
+		      </article>
+		      <article class="ui-article" data-key="1">
+		        <h2 class="ui-heading">2018全年营收，利润超预期</h2>
+		        <p class="ui-paragraph">全年净利润同比增长59.5%。2018年小米硬件综合税后净利润小于1%。 </p>
+				</article>
+		      <article class="ui-article" data-key="2">
+		        <h2 class="ui-heading">手机逆势增长 站稳高市场</h2>
+		        <p class="ui-paragraph">小米手机全球出货量同比增长30%，研发投入逐年大幅提升 </p>
+		      </article>
+		      <article class="ui-article" data-key="3">
+		        <h2 class="ui-heading">海外收入暴涨</h2>
+		        <p class="ui-paragraph">西欧市场增长亮眼 国际市场收入人民币700亿元 同比增长 118.1%</p>
+		      </article>
+		      <article class="ui-article" data-key="4">
+		        <h2 class="ui-heading">互联网收入猛增更全面更多元
+				</h2>
+		        <p class="ui-paragraph">互联网收入人民币160亿元
+					同比增长
+					61.2%
+					来自中国手机广告和游戏之外的互联网收入
+					占互联网业务总收入超过30%
+					s</p>
+		      </article>
+		      <article class="ui-article" data-key="5">
+		        <h2 class="ui-heading">Alot布局持续领先</h2>
+		        <p class="ui-paragraph">1.51亿台设备连接数，同比增长193.2%。大约230万人持有超过5个小米物联网设备，同比增长109.1%</p>
+		      </article>
+				<article class="ui-article" data-key="6">
+		        <h2 class="ui-heading">小米电视全球出货量倍增</h2>
+		        <p class="ui-paragraph">小米电视全球出货量达840万台，同比增长225%</p>
+		      </article>
+				<article class="ui-article" data-key="7">
+		        <h2 class="ui-heading">线下渠道持续高效拓展</h2>
+		        <p class="ui-paragraph">截至2018年12月31日中国大陆小米之家586个，小米授权店1378个。</p>
+		      </article>
+		    </div>
+		  </div>
+		</div>
+	
+	<script src='js/flipping.web.js'></script>
+	<script>
+		console.clear();
+
+		const elPrevButton = document.querySelector('#prev');
+		const elNextButton = document.querySelector('#next');
+		const flipping = new Flipping();
+
+		const elImages = Array.from(document.querySelectorAll('.ui-big-image'));
+		const elThumbnails = Array.from(document.querySelectorAll('.ui-thumbnail'));
+
+		let state = {
+		  photo: 0
+		};
+
+		function send(event) {
+		  // read cuticle positions
+		  flipping.read();
+		  
+		  const elActives = document.querySelectorAll('[data-active]');
+		  
+		  Array.from(elActives)
+		    .forEach(el => el.removeAttribute('data-active'));
+
+		  switch (event) {
+		    case 'PREV':
+		      state.photo--;
+		      // Math.max(state.photo - 1, 0);
+		      break;
+		    case 'NEXT':
+		      state.photo++;
+		      // Math.min(state.photo + 1, elImages.length - 1);
+		      break;
+		    default:
+		      state.photo = +event;
+		      break;
+		  }
+		  
+		  var len = elImages.length;
+		  // Loop Around
+		  //state.photo = ( ( state.photo % len) + len ) % len;
+		  state.photo = Math.max(0, Math.min( state.photo, len - 1) );
+
+		  Array.from(document.querySelectorAll(`[data-key="${state.photo}"]`))
+		    .forEach( el => {
+		    el.setAttribute('data-active', true);
+		  });
+		  
+		  // execute the FLIP animation
+		  flipping.flip();
+		}
+
+		elThumbnails.forEach( thumb => { 
+		  thumb.addEventListener('click', () => {
+		    send(thumb.dataset.key);
+		  });
+		});
+
+		elPrevButton.addEventListener('click', () => {
+		  send('PREV');
+		});
+
+		elNextButton.addEventListener('click', () => {
+		  send('NEXT');
+		});
+
+		send(0);
+	</script>
+</body>
+</html>
